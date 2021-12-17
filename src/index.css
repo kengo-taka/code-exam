@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 60px;
+}
+
+.header div:nth-child(2) {
+  align-self: center;
+  justify-self: center;
+}
+
+.showList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 250px);
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto; 
+  background-color: rgb(230, 230, 230);
+  justify-content: center;
+}
+
+.eachItem {
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(255, 255, 255);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.deleteButton {
+  background-color: rgb(16, 150, 105);
+  color: white;
+  width: 60px;
+  text-align: center;
+  height: 18px;
+  font-size: 13px;
+  border-radius: 5px;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.eachItem p:nth-child(2n-1) {
+  color: rgb(177, 177, 177);
+  font-size: 10px;
+  margin: 0px;
+}
+
+.eachItem p:nth-child(2n) {
+  color: rgb(0, 0, 0);
+  font-size: 13px;
+}
+
+.inputGroup {
+  width: 200px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.inputGroup input{
+  width: 100%;
+}
+
+.inputGroup p {
+  font-size: 12px;
+}
+
+.addButton {
+  background-color: rgb(214, 117, 72);
+  width: 60px;
+  height:17px;
+  color: white;
+  font-size: 12px;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.addButton:hover {
+  cursor: pointer;
+}
+
+.updateButton {
+  background-color: rgb(196, 104, 75);
+  color: white;
+  width: 60px;
+  text-align: center;
+  height: 18px;
+  font-size: 13px;
+  border-radius: 5px;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.cancelButton {
+  background-color: rgb(75, 103, 196);
+  color: white;
+  width: 60px;
+  text-align: center;
+  height: 18px;
+  font-size: 13px;
+  border-radius: 5px;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.cancelButton :hover {
+  cursor: pointer;
+}
+
+.updateButton:hover {
+  cursor: pointer;
+}
+
+.updateBack {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(196, 196, 196, 0.7);
+  position: fixed;
+  top: 0px;
+}
+
+.updateScreen {
+  width: 250px;
+  height: 260px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  padding: 10px;
+  border-radius: 5px;
+}
